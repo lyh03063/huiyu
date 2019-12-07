@@ -1,6 +1,7 @@
 <template>
   <div class>
     <h_head active="4"></h_head>
+    <div class="product-banner">常见问题</div>
      <h_problem_list :problemList="problemList"></h_problem_list>
      <h_foot></h_foot>
       <h_floatbar></h_floatbar>

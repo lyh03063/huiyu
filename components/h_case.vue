@@ -2,15 +2,19 @@
   <div class="case-list-box">
     <div class="case-list-title">客户案列</div>
     <div class="case-main">
-      <div class="case-box" v-for="(item,index) in caseList" :key="index" v-if="index<=3?true:index<=6?movePage:smallpage">
-        <el-image class="img-box" :src="item.img" :preview-src-list="srcList"></el-image>
+      <div  v-for="(item,index) in caseList" :key="index" >
+        <div v-if="index<=3?true:index<=6?movePage:smallpage" class="case-box">
+        <el-image class="img-box" :src="item.img" :preview-src-list="srcList" ></el-image>
         <!-- <div class="img-box" :style="{'background-image': `url(${item.img})`}"></div> -->
         <div class="img-title">
+          <nuxt-link :to="item.path">
           <div style="float:left">{{item.name}}</div>
           <div style="float:right;">></div>
           <div style="clear:both"></div>
+          </nuxt-link>
         </div>
         <div class="img-describe">{{item.describe}}</div>
+        </div>
       </div>
       <div style="clear:both"></div>
     </div>
@@ -41,6 +45,7 @@ export default {
   mounted() {
     if (window.screen.width<1200) {
         if (window.screen.width<768) {
+          this.movePage = false
             this.smallpage = false
         }else{
             this.movePage = false
@@ -77,7 +82,7 @@ export default {
 .img-title div {
   line-height: 30px;
 }
-.img-title:hover {
+.img-title a div:hover {
   color: red;
   cursor: pointer;
 }

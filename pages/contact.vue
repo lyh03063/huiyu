@@ -1,6 +1,7 @@
 <template>
   <div class>
     <h_head active="5"></h_head>
+    <div class="product-banner">联系我们</div>
     <!-- <div style="height:20px;"></div> -->
     <div class="contact-main">
         <div class="contact-box">

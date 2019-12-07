@@ -1,6 +1,7 @@
 <template>
   <div class>
     <h_head active="1"></h_head>
+    <div class="product-banner">关于辉域</div>
     <div style="height:20px;"></div>
     <div class="about-text">辉域建站是深圳市辉域科技有限公司旗下H5网站建设品牌</div>   
     <div class="about-text">有顶级的开发团队，一直专注于网站建设领域</div>
@@ -43,4 +44,5 @@ export default {
         font-size: 18px;
         
     }
+ 
 </style>

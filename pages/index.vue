@@ -27,15 +27,17 @@ export default{
   components:{ h_head, h_banber,h_info,h_case,h_problem_list,h_course_intro,h_foot,h_floatbar},
   asyncData(){
         let caseList = [
-            {name:'唐球小程序',img:"",describe:"管理唐球运动的小程序",img:"http://www.vishining.com/u_file/instance/17_02_16/ddb4b803d1.jpg"},
-            {name:'水果商城',img:"",describe:"响应式移动端水果商城",img:"http://qn-dmagic.dmagic.cn/201911291628963636_个人主页1-1.png"},
-            {name:'案件管理系统',img:"",describe:"管理案件数据的功能性网站",img:"http://qn-dmagic.dmagic.cn/201911291627613232_龙庭空调.png"},
-            {name:'信息管理系统',img:"",describe:"管理各种信息数据的功能性网站",img:"http://www.vishining.com/u_file/instance/19_05_07/79423b977f.jpg"},
-            {name:'龙庭空调',img:"",describe:"龙庭空调的官网",img:"http://qn-dmagic.dmagic.cn/201911291627613232_龙庭空调.png"},
-            {name:'唐球小程序',img:"",describe:"管理唐球运动的小程序",img:"http://www.vishining.com/u_file/instance/17_02_16/ddb4b803d1.jpg"},
-            {name:'水果商城',img:"",describe:"响应式移动端水果商城",img:"http://www.vishining.com/u_file/instance/17_02_16/0f6691dbcc.jpg"},
-            {name:'案件管理系统',img:"",describe:"管理案件数据的功能性网站",img:"http://www.vishining.com/u_file/instance/19_05_07/79423b977f.jpg"},
-            {name:'信息管理系统',img:"",describe:"管理各种信息数据的功能性网站",img:"http://www.vishining.com/u_file/instance/19_05_09/2237572f17.jpg"},
+            {name:'唐球小程序',path:{name:'case_detail-id',params:{id:1}},describe:"管理唐球运动的小程序",img:"http://www.vishining.com/u_file/instance/17_02_16/ddb4b803d1.jpg"},
+            {name:'案件管理系统',path:{name:'case_detail-id',params:{id:2}},describe:"管理案件数据的功能性网站",img:"http://qn-dmagic.dmagic.cn/201911291627613232_龙庭空调.png"},
+             {name:'龙庭空调',path:{name:'case_detail-id',params:{id:3}},describe:"龙庭空调的官网",img:"http://qn-dmagic.dmagic.cn/201911291627613232_龙庭空调.png"},
+            {name:'水果商城',path:{name:'case_detail-id',params:{id:2}},describe:"响应式移动端水果商城",img:"http://qn-dmagic.dmagic.cn/201911291628963636_个人主页1-1.png"},
+            
+            {name:'信息管理系统',path:{name:'case_detail-id',params:{id:1}},describe:"管理各种信息数据的功能性网站",img:"http://www.vishining.com/u_file/instance/19_05_07/79423b977f.jpg"},
+           
+            {name:'唐球小程序',path:{name:'case_detail-id',params:{id:1}},describe:"管理唐球运动的小程序",img:"http://www.vishining.com/u_file/instance/17_02_16/ddb4b803d1.jpg"},
+            {name:'水果商城',path:{name:'case_detail-id',params:{id:1}},describe:"响应式移动端水果商城",img:"http://www.vishining.com/u_file/instance/17_02_16/0f6691dbcc.jpg"},
+            {name:'案件管理系统',path:{name:'case_detail-id',params:{id:1}},describe:"管理案件数据的功能性网站",img:"http://www.vishining.com/u_file/instance/19_05_07/79423b977f.jpg"},
+            {name:'信息管理系统',path:{name:'case_detail-id',params:{id:1}},describe:"管理各种信息数据的功能性网站",img:"http://www.vishining.com/u_file/instance/19_05_09/2237572f17.jpg"},
         ]
         let problemList = [
           {name:"网站制作设计的规范有哪些？",answer:"现在的网站设计圈子，基本上都有很多雷同，没有太多的新意，基本上都是相类似，新出来的页面设计基本上就是那些专业的设计师的盗版，换汤不换药，没有太多的新意。"},
